@@ -171,6 +171,10 @@
                 <div class="relative w-80 h-80 lg:w-96 lg:h-96 group perspective flex items-center justify-center">
                     <div class="absolute inset-0 bg-blue-500 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
                     <!-- SVG Velocímetro -->
+            <div class="hidden md:flex justify-center fade-in-up delay-100">
+                <div class="relative w-80 h-80 lg:w-96 lg:h-96 group perspective flex items-center justify-center">
+                    <div class="absolute inset-0 bg-blue-500 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
+                    <!-- SVG Velocímetro -->
                     <div class="relative z-10 bg-gradient-to-br from-slate-950 to-slate-750 p-8 rounded-full border-4 border-slate-700 shadow-2xl flex flex-col justify-center items-center h-full w-full transform transition-all duration-500 hover:scale-105">
                         <svg class="w-full h-full" viewBox="0 0 200 120">
                             <!-- Dial -->
@@ -189,9 +193,9 @@
                                 <text x="172" y="105">MAX</text>
                             </g>
                             <!-- Aguja -->
-                            <g id="speed-needle" class="speedometer-needle relative">
-                                <path d="M100 100 L 100 25 L 97 100 L 20 100 Z" fill="#ef4444" />
-                                <circle cx="100" cy="100" r="1.5" fill="#1e293b" stroke="#ef4444" stroke-width="5" />
+                            <g id="speed-needle" class="speedometer-needle relative" style="transform-origin: 100px 100px;">
+                                <path d="M102 100 L 100 25 L 97 100 L 35 100 Z" fill="#ef4444" />
+                                <circle cx="100" cy="100" r="3" fill="#1e293b" stroke="#ef4444" stroke-width="5" />
                             </g>
                         </svg>
                         <div class="absolute bottom-12 text-center">
